@@ -1,3 +1,4 @@
+/Users/lizhenghua/Documents/tencent/codes/miejike.github.io/bitsoft
 ├── api
 |  └── news.html
 ├── bitsoft.mp4
@@ -55,10 +56,7 @@
 ├── privacypolicy.html
 ├── recruit-experienced.html
 ├── recruit-graduates.html
-├── recruit-sales.html
-└── search
-   ├── search.css
-   └── search.js
+└── recruit-sales.html
 
-directory: 19 file: 42
+directory: 18 file: 40
 
