@@ -241,25 +241,25 @@ header{ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); transition: all 0.5s ease 0s;
 	.header-style6 .navbar-header-custom { padding: 17px 0 15px 0; }
 	.header-style6 .navbar-default{ background: rgba(52, 152, 219,0.85); -webkit-box-shadow: none; -ms-box-shadow: none; box-shadow: none; }
 
-	.header-style6 .navbar-nav li.has-sub a:hover{ color: #d0ad55; }
-	.header-style6 .navbar-nav > li > a{ color: #d0ad55; }
-	.header-style6 .navbar-nav li.current > a{ color: #d0ad55; font-weight: 700; }
-	.header-style6 .navbar-nav li.active > a{ color: #d0ad55; font-weight: 700; }
-	.header-style6 .navbar-nav > li.has-sub > a:hover{ color: #d0ad55; }
-	.header-style6 .navbar > ul > li.has-sub > a:hover:after{ border-color: transparent #d0ad55 #d0ad55 transparent; }
-	.header-style6 .navbar > ul > li.has-sub > a:after{  border-color: transparent #d0ad55 #d0ad55 transparent; }
-	.header-style6 .navbar > ul > li.current > a:after{ border-color: transparent #d0ad55 #d0ad55 transparent; }
+	.header-style6 .navbar-nav li.has-sub a:hover{ color: #000; }
+	.header-style6 .navbar-nav > li > a{ color: #000; }
+	.header-style6 .navbar-nav li.current > a{ color: #000; font-weight: 700; }
+	.header-style6 .navbar-nav li.active > a{ color: #000; font-weight: 700; }
+	.header-style6 .navbar-nav > li.has-sub > a:hover{ color: #000; }
+	.header-style6 .navbar > ul > li.has-sub > a:hover:after{ border-color: transparent #000 #000 transparent; }
+	.header-style6 .navbar > ul > li.has-sub > a:after{  border-color: transparent #000 #000 transparent; }
+	.header-style6 .navbar > ul > li.current > a:after{ border-color: transparent #000 #000 transparent; }
 
 	.header-style6.scrollHeader .navbar-header-custom { padding: 10px 0; }
 	.header-style6.scrollHeader .navbar-default { background: #3498db;  }
-	.header-style6.scrollHeader .navbar-nav > li > a { color: #d0ad55; }
-	.header-style6.scrollHeader .navbar-nav > li.has-sub > a:hover { color: #d0ad55; }
-	.header-style6.scrollHeader .navbar > ul > li.has-sub > a:after { border-color: transparent #d0ad55 #d0ad55 transparent; }
-	.header-style6.scrollHeader .navbar-nav li.current > a{ color: #d0ad55; font-weight: 700; }
-	.header-style6.scrollHeader .navbar-nav li.current > a:hover{ color: #d0ad55; }
-	.header-style6.scrollHeader .navbar > ul > li.current > a:after{ border-color: transparent #d0ad55 #d0ad55 transparent; }
-	.header-style6.scrollHeader .navbar-nav li.active > a{ color: #d0ad55; font-weight: 700; }
-	.header-style6.scrollHeader .navbar-nav li.active > a:hover{ color: #d0ad55; }	
+	.header-style6.scrollHeader .navbar-nav > li > a { color: #000; }
+	.header-style6.scrollHeader .navbar-nav > li.has-sub > a:hover { color: #000; }
+	.header-style6.scrollHeader .navbar > ul > li.has-sub > a:after { border-color: transparent #000 #000 transparent; }
+	.header-style6.scrollHeader .navbar-nav li.current > a{ color: #000; font-weight: 700; }
+	.header-style6.scrollHeader .navbar-nav li.current > a:hover{ color: #000; }
+	.header-style6.scrollHeader .navbar > ul > li.current > a:after{ border-color: transparent #000 #000 transparent; }
+	.header-style6.scrollHeader .navbar-nav li.active > a{ color: #000; font-weight: 700; }
+	.header-style6.scrollHeader .navbar-nav li.active > a:hover{ color: #000; }	
 
 	/* atribute navigation */
 	.header-style6 .attr-nav > ul > li > a{ color: #fff; }
