@@ -1,29 +1,12 @@
-├── bitsoft.mp4
 ├── api
 |  └── news.html
+├── bitsoft.mp4
 ├── business.html
 ├── company.html
 ├── css
 |  ├── plugins
-|  |  ├── animate.css
-|  |  ├── bootstrap.min.css
-|  |  ├── datepicker.css
-|  |  ├── default.css
-|  |  ├── et-line.css
-|  |  ├── fontawesome-all.min.css
-|  |  ├── icomoon.css
-|  |  ├── magnific-popup.css
-|  |  ├── mailform.css
-|  |  ├── nav-menu.css
-|  |  ├── owl.carousel.min.css
-|  |  ├── owl.theme.default.min.css
-|  |  ├── prism.css
-|  |  └── xzoom.css
 |  ├── plugins.css
 |  ├── rev_slider
-|  |  ├── layers.css
-|  |  ├── navigation.css
-|  |  └── settings.css
 |  ├── styles-6.css
 |  └── styles.scss
 ├── fonts
@@ -31,90 +14,15 @@
 |  ├── fa-regular-400.woff2
 |  ├── fa-solid-900.woff2
 |  └── revicons
-|     └── revicons90c6.woff
 ├── img
 |  ├── bg
-|  |  ├── bg1.jpg
-|  |  ├── bg4.jpg
-|  |  ├── bg5.jpg
-|  |  └── bg6.jpg
 |  ├── company
-|  |  ├── CEO.jpg
-|  |  └── campany04.jpg
 |  ├── logos
-|  |  ├── apple-touch-icon-114x114.png
-|  |  ├── favicon.png
-|  |  ├── logo-02.png
-|  |  └── logo-white.png
 |  ├── partners
-|  |  ├── client-01.png
-|  |  ├── client-02.png
-|  |  ├── client-03.png
-|  |  ├── client-04.png
-|  |  ├── client-05.png
-|  |  ├── client-06.png
-|  |  ├── client-07.png
-|  |  └── client-08.png
 |  ├── recruit
-|  |  ├── 103.jpg
-|  |  ├── recruit-1.jpg
-|  |  ├── recruit-2.jpg
-|  |  └── recruit-3.jpg
 |  ├── services
-|  |  ├── B001.jpg
-|  |  ├── B002.jpg
-|  |  ├── B003.jpg
-|  |  ├── B004.jpg
-|  |  ├── s-1.jpg
-|  |  ├── s-2.jpg
-|  |  ├── s-3.jpg
-|  |  └── s-4.jpg
 |  ├── slider
-|  |  ├── slide1.jpg
-|  |  ├── slide4.jpg
-|  |  └── slide5.jpg
 |  └── team
-|     ├── birthday00001.jpg
-|     ├── birthday00002.jpg
-|     ├── birthday00003.jpg
-|     ├── birthday00004.jpg
-|     ├── birthday00005.jpg
-|     ├── birthday00006.jpg
-|     ├── birthday00007.jpg
-|     ├── birthday00008.jpg
-|     ├── birthday00009.jpg
-|     ├── birthday00010.jpg
-|     ├── bounenkai00001.jpg
-|     ├── bounenkai00002.jpg
-|     ├── bounenkai00003.jpg
-|     ├── bounenkai00004.jpg
-|     ├── bounenkai00005.jpg
-|     ├── bounenkai00006.jpg
-|     ├── bounenkai00007.jpg
-|     ├── bounenkai00008.jpg
-|     ├── bounenkai00009.JPG
-|     ├── bounenkai000100.jpg
-|     ├── bounenkai000110.jpg
-|     ├── bounenkai000120.jpg
-|     ├── bounenkai000130.jpg
-|     ├── bounenkai000140.jpg
-|     ├── team00001.jpg
-|     ├── team00002.jpg
-|     ├── team00003.jpg
-|     ├── team00004.jpg
-|     ├── team00005.jpg
-|     ├── team00006.jpg
-|     ├── team00007.jpg
-|     ├── team00008.jpg
-|     ├── team00009.jpg
-|     ├── team000100.jpg
-|     ├── team000110.jpg
-|     ├── team000120.jpg
-|     ├── team000130.jpg
-|     ├── teammember-01.jpg
-|     ├── teammember-02.jpg
-|     ├── teammember-04.jpg
-|     └── teammember-05.jpg
 ├── index.html
 ├── js
 |  ├── ajaxSubmit.js
@@ -130,8 +38,6 @@
 |  ├── jquery.min.js
 |  ├── jquery.stellar.min.js
 |  ├── mailform
-|  |  ├── jquery.form.min.js
-|  |  └── jquery.rd-mailform.min.c.js
 |  ├── main.js
 |  ├── map.js
 |  ├── modernizr.js
@@ -141,21 +47,12 @@
 |  ├── prism.js
 |  ├── recruit.js
 |  ├── rev_slider
-|  |  ├── extensions
-|  |  |  ├── revolution.extension.actions.min.js
-|  |  |  ├── revolution.extension.carousel.min.js
-|  |  |  ├── revolution.extension.kenburn.min.js
-|  |  |  ├── revolution.extension.layeranimation.min.js
-|  |  |  ├── revolution.extension.migration.min.js
-|  |  |  ├── revolution.extension.navigation.min.js
-|  |  |  ├── revolution.extension.parallax.min.js
-|  |  |  ├── revolution.extension.slideanims.min.js
-|  |  |  └── revolution.extension.video.min.js
-|  |  ├── jquery.themepunch.revolution.min.js
-|  |  └── jquery.themepunch.tools.min.js
 |  ├── tabs.min.js
 |  └── waypoints.min.js
 ├── news.html
+├── output.txt
+├── policy.html
+├── privacypolicy.html
 ├── recruit-experienced.html
 ├── recruit-graduates.html
 ├── recruit-sales.html
@@ -163,5 +60,5 @@
    ├── search.css
    └── search.js
 
-directory: 20 file: 144
+directory: 19 file: 42
 
