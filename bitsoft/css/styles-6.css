@@ -82,7 +82,7 @@
     transform: rotate(360deg); } }
 /* theme color and basic options */
 a:hover, a:active {
-  color: #000;
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none; }
 
 .bg-theme {
