@@ -1,4 +1,3 @@
-/Users/lizhenghua/Documents/tencent/codes/miejike.github.io/bitsoft
 ├── api
 |  └── news.html
 ├── bitsoft.mp4

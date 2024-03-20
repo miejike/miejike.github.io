@@ -3747,9 +3747,19 @@ h1.title-style2.white, h2.title-style2.white, h3.title-style2.white, h4.title-st
 
 .team-member-img {
   width: 100%;
-  height: auto; }
+  position: relative;
+  overflow: hidden;}
+  .team-member-img::before {
+    content: "";
+    display: block;
+    padding-top: 100%;}
   .team-member-img img {
-    width: 100%; }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;}
 
 .team-member-text {
   text-align: center;

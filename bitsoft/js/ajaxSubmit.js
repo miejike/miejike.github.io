@@ -1,15 +1,7 @@
 $(function () {
-    var optionsContact = {  
-        beforeSubmit:  beforeSubmitContact,
-        success:       successContact,
-        error:         errorContact,
-        url:       "/api/contact",
-        type:      "post",
-        dataType:  "json",
-        clearForm: false, 
-        resetForm: true,
-        timeout:   10000
-    };
+    var email = 'contact@bitsoft-inc.co.jp';
+    var subject = 'ご利用に関するお問い合わせ';
+    var subjectEntry = '応募の件';
     
     function beforeSubmitContact(arr, $form, options) {
         
@@ -28,21 +20,6 @@ $(function () {
                 errFlg = true;
             }
         }
-        var mail = arr[2].value;
-        if (mail == '' || mail == null) {
-            errMsg = errMsg.concat("・「Eメール:」入力してください！</br>");
-            errFlg = true;
-        } else {
-            var reg = /^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]{1,}.[A-Za-z0-9]{1,}$/;
-            if (!reg.test(mail)) {
-                errMsg = errMsg.concat("・「Eメール:」正しいメールアドレスを入力してください。</br>");
-                errFlg = true;
-            }
-        }
-        if (arr[3].value == '') {
-            errMsg = errMsg.concat("・「メッセージ:」入力してください！</br>");
-            errFlg = true;
-        }
 
         if (errFlg) {
             $("#msgContact").attr("class","alert alert-warning text-danger");
@@ -53,48 +30,28 @@ $(function () {
         return true;
     };
     
-    function successContact(data, statusText, xhr,  form) {
-        $("#msgContact").removeAttr("class");
-        if (data.code == '200') {
-            $("#msgContact").attr("class","alert alert-success text-success");
-            $("#msgContact").html(data.msg);
-        } else {
-            $("#msgContact").attr("class","alert alert-warning text-danger");
-            $("#msgContact").html(data.msg);
-        }
-        form[0][4].disabled = false;
-        console.log(data);
-    };
-    
-    function errorContact(data, statusText, xhr,  form) {
-        $("#msgContact").removeAttr("class");
-        $("#msgContact").attr("class","alert alert-warning text-danger");
-        $("#msgContact").html("システムエラーが発生しました。");
+    $("#sendContact").submit(function (e) {
+        e.preventDefault();
+        var arr = $(this).serializeArray();
+        // $(this).ajaxSubmit(optionsContact);
+        
+        if (beforeSubmitContact(arr, $(this))) {
+            // メールの本文を構築
+            var body = "差出人: " + arr[0].value + "\n\n";
+            body += "電話番号: " + arr[1].value + "\n\n";
+            body += "メッセージ: " + arr[2].value;
 
-        form[0][4].disabled = false;
-        console.log(data);
-    };
-    
-    $("#sendContact").submit(function () {
-        $(this).ajaxSubmit(optionsContact);
+            // メールリンクを作成
+            var mailtoLink = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+
+            // デフォルトのメールクライアントを開く
+            window.location.href = mailtoLink;
+        };
         return false;
     });
     
     
-    var optionsRecruit = {  
-        beforeSubmit:  beforeSubmitRecruit,
-        success:       successRecruit,
-        error:         errorRecruit,
-        url:       "/api/recruit",
-        type:      "post",
-        dataType:  "json",
-        clearForm: false, 
-        resetForm: true,
-        timeout:   10000
-    };
-    
-    
-    function beforeSubmitRecruit(arr, $form, options) {
+    function beforeSubmitRecruit(arr) {
         
         $("#customRecruit")[0].disabled = true;
         
@@ -165,34 +122,29 @@ $(function () {
         return true;
     };
     
-    function successRecruit(data, statusText, xhr, form) {
-        $("#msgRecruit").removeAttr("class");
-        if (data.code == '200') {
-            $("#msgRecruit").parent().attr("class","col-md-12 alert alert-success text-success");
-            $("#msgRecruit").html(data.msg);
-        } else {
-            $("#msgRecruit").parent().attr("class","col-md-12 alert alert-warning text-danger");
-            $("#msgRecruit").html(data.msg);
-        }
-        
-        form[0][2].parentElement.children[1].innerHTML = '性別:';
-        form[0][6].parentElement.children[1].innerHTML = '最終学歴:';
-        
-        $("#customRecruit")[0].disabled = true;
-        console.log(data);
-    };
-    
-    function errorRecruit(data, statusText, xhr,  form) {
-        $("#msgRecruit").removeAttr("class");
-        $("#msgRecruit").parent().attr("class","col-md-12 alert alert-warning text-danger");
-        $("#msgRecruit").html("システムエラーが発生しました。");
+    $("#sendRecruit").submit(function (e) {
+        e.preventDefault();
+        var arr = $(this).serializeArray();
 
-        $("#customRecruit")[0].disabled = false;
-        console.log(data);
-    };
-    
-    $("#sendRecruit").submit(function () {
-        $(this).ajaxSubmit(optionsRecruit);
+        if (beforeSubmitRecruit(arr)) {
+            // メールの本文を構築
+            var body = "差出人: " + arr[0].value + "\n\n";
+            body += "フリガナ: " + arr[1].value + "\n\n";
+            body += "性別: " + arr[2].value + "\n\n";
+            body += "生年月日: " + arr[3].value + "\n\n";
+            body += "住所: " + arr[4].value + "\n\n";
+            body += "Eメール: " + arr[5].value + "\n\n";
+            body += "最終学歴: " + arr[6].value + "\n\n";
+            if (arr[7].value) { body += "資格・免許: " + arr[7].value + "\n\n"; }
+            if (arr[8].value) { body += "電話番号: " + arr[8].value + "\n\n"; }
+            body += "自己PR／志望動機: " + arr[9].value;
+
+            // メールリンクを作成
+            var mailtoLink = "mailto:" + email + "?subject=" + encodeURIComponent(subjectEntry) + "&body=" + encodeURIComponent(body);
+
+            // デフォルトのメールクライアントを開く
+            window.location.href = mailtoLink;
+        };
         return false;
     });
     
