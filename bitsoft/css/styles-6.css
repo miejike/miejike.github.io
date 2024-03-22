@@ -969,7 +969,7 @@ h1.title-style2.white, h2.title-style2.white, h3.title-style2.white, h4.title-st
 
   /*Header style06*/
   .header-style6 .navbar-default {
-    background: rgba(15, 15, 15, 0.85); }
+    background: #fff; }
 
   /*Header style08*/
   .header-style8 .navbar ul ul li.active > a {
@@ -3867,11 +3867,11 @@ h1.title-style2.white, h2.title-style2.white, h3.title-style2.white, h4.title-st
 .team-style2 .owl-stage {
   position: relative;
   overflow: hidden;}
-  .owl-item::before {
+.team-style2 .owl-item::before {
     content: "";
     display: block;
     padding-top: 70%;}
-  .owl-item img {
+.team-style2 .owl-item img {
     position: absolute;
     top: 0;
     left: 0;
