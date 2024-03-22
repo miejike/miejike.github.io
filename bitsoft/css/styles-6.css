@@ -3752,7 +3752,7 @@ h1.title-style2.white, h2.title-style2.white, h3.title-style2.white, h4.title-st
   .team-member-img::before {
     content: "";
     display: block;
-    padding-top: 100%;}
+    padding-top: 150%;}
   .team-member-img img {
     position: absolute;
     top: 0;
@@ -3863,6 +3863,21 @@ h1.title-style2.white, h2.title-style2.white, h3.title-style2.white, h4.title-st
     width: 100%; }
   .team-style1 .team-member-img:hover img {
     transform: scale(1.1); }
+
+.team-style2 .owl-stage {
+  position: relative;
+  overflow: hidden;}
+  .owl-item::before {
+    content: "";
+    display: block;
+    padding-top: 70%;}
+  .owl-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%!important;
+    height: 100%;
+    object-fit: cover;}
 
 .team-style2 .team-member-img img {
   transition: all 0.3s ease 0s; }
